@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <title>Landing page com bootstrap</title>
+  </head>
+  <body>
+    <div
+      class="container text-white background-color-custom col-sm-8 col-md-4 p-4"
+    >
+      <img src="./assets/logoOneBitDark.png" class="img-fluid" />
+
+      <form class="mt-3">
+        <h6>1 - Qual o seu nome?</h6>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text-custom" id="first-name"
+              >Primeiro nome</span
+            >
+          </div>
+          <input type="text" class="form-control" />
+        </div>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text-custom" id="last-name"
+              >Sobrenome</span
+            >
+          </div>
+          <input type="text" class="form-control" />
+        </div>
+
+        <h6>2 - Qual o seu gênero?</h6>
+
+        <fieldset class="form-group">
+          <div class="row">
+            <div class="col-sm-10">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios1"
+                  value="opcao1"
+                  checked
+                />
+                <label class="form-check-label" for="gridRadios1">
+                  <h6>Homem</h6>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios2"
+                  value="opcao2"
+                />
+                <label class="form-check-label" for="gridRadios2">
+                  <h6>Mulher</h6>
+                </label>
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="gridRadios"
+                  id="gridRadios3"
+                  value="opcao3"
+                />
+                <label class="form-check-label" for="gridRadios3">
+                  <h6>Prefiro não informar</h6>
+                </label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <h6>3 - Marque os treinamentos que você fez:</h6>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            ><h6>Treinamento básico de astronauta</h6></label
+          >
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            ><h6>Treinamento físico básico</h6></label
+          >
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            ><h6>Treinamento avançado de astronauta</h6></label
+          >
+        </div>
+
+        <div class="form-check form-switch mb-2">
+          <input class="form-check-input" type="checkbox" role="switch" />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            ><h6>Treinamento físico intenso</h6></label
+          >
+        </div>
+
+        <h6>4 - Quais você acha que são suas qualidades?</h6>
+
+        <div class="d-flex flex-row flex-wrap column-gap-2">
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="exampleCheck1">Proativo</label>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Resistente</label
+            >
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Não vomito fácil</label
+            >
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Não temo marcianos</label
+            >
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" />
+            <label class="form-check-label" for="exampleCheck1"
+              >Já vi todos os stars wars</label
+            >
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+          <button
+            type="submit"
+            class="btn btn-outline-danger mt-3 align-self-sm-center"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>
